@@ -1,0 +1,48 @@
+
+
+  <head>
+    <title>Formulário de Contato</title>
+  </head>
+  <body>
+    <h1>Formulario
+    </h1>
+    <form action="enviar.php" method="post" enctype="multipart/form-data">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="sexo">Sexo:</label>
+      <input type="radio" id="sexo-f" name="sexo" value="feminino" required>
+      <label for="sexo-f">Feminino</label>
+      <input type="radio" id="sexo-m" name="sexo" value="masculino">
+      <label for="sexo-m">Masculino</label><br><br>
+
+      <label for="interesses">Interesses:</label>
+      <input type="checkbox" id="interesse1" name="interesses[]" value="esporte">
+      <label for="interesse1">Esporte</label>
+      <input type="checkbox" id="interesse2" name="interesses[]" value="tecnologia">
+      <label for="interesse2">Tecnologia</label>
+      <input type="checkbox" id="interesse3" name="interesses[]" value="cultura">
+      <label for="interesse3">Cultura</label><br><br>
+
+      <label for="cidade">Cidade:</label>
+      <select id="cidade" name="cidade" required>
+        <option value="">Selecione uma cidade</option>
+        <option value="sao-paulo">São Paulo</option>
+        <option value="rio-de-janeiro">Rio de Janeiro</option>
+        <option value="belo-horizonte">Belo Horizonte</option>
+      </select><br><br>
+
+      <label for="arquivo">Anexar arquivo:</label>
+      <input type="file" id="arquivo" name="arquivo"><br><br>
+
+      <label for="mensagem">Mensagem:</label><br>
+
+      <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea><br><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
